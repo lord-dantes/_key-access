@@ -1,0 +1,127 @@
+html,body{margin:0px;padding:0px;background: #F2F3F5;}
+*{font-family: 'Roboto', sans-serif;box-sizing: border-box;margin:0px;padding:0px;}
+
+:root{
+	--main-color: #0898EC;
+	--main-white: #fff;
+	--main-black: #000;
+	--main-background-btn: #2991D6;
+	--main-background-btn-hover: #347CAB;
+	--main-background: #0095EB;
+	--main-access: #161922;
+}
+.container{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+header{
+	background: var(--main-white);
+	padding: 60px 80px 132px 93px;
+}
+.header-box{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header-logo p:first-child:not(span){
+	font-style: normal;
+	font-weight: 300;
+	font-size: 41px;
+	line-height: 42px;
+	text-align: center;
+	color: var(--main-black);
+	margin-bottom: 9px;
+}
+.header-logo p:first-child span{
+	font-style: normal;
+	font-weight: 900;
+	font-size: 41px;
+	line-height: 42px;
+	text-align: center;
+	color: var(--main-color);
+	margin-bottom: 9px;
+}
+.header-logo p:last-child{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 29px;
+	line-height: 34px;
+	text-align: center;
+	color: var(--main-black);
+}
+.header-btn{
+	display: flex;
+}
+.header-btn a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 19px;
+	border-radius: 5px;
+	width: 121px;
+	height: 43px;
+	text-decoration: none;
+	background: var(--main-background-btn);
+	color: var(--main-white);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	transition: all 300ms;
+}
+.header-btn a:hover{
+	background: var(--main-background-btn-hover);
+}
+.attention-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--main-background);
+	padding: 38px 0px 35px;
+	margin-bottom: 60px;
+}
+.attention-content p{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 50px;
+	max-width: 930px;
+	line-height: 58px;
+	text-align: center;
+	color: var(--main-white);
+}
+.access-content{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 41px;
+	line-height: 42px;
+	text-align: center;
+	color: var(--main-access);
+	margin-bottom: 60px;
+}
+@media screen and (max-width: 767px){
+	header{
+		padding: 30px 40px 100px;
+	}
+	.header-box{
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.header-btn{
+		justify-content: space-between;
+	}
+	.header-btn a{
+		margin: 19px;
+	}
+	.attention-content{
+		padding: 38px 20px;
+	}
+	.attention-content p{
+		font-size: 40px;
+	}
+	.access-content{
+		font-size: 30px;
+		padding: 0px 20px;
+	}
+}
